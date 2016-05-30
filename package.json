@@ -2,10 +2,12 @@
   "name": "nick-generator",
   "version": "0.0.3",
   "description": "Forget using boring nicknames and start using witty alternatives instead.",
-  "main": "index.js",
+  "files": [
+    "build.js"
+  ],
   "scripts": {
-    "gulp": "gulp",
-    "start": "node dist/lib/index.js",
+    "build": "buble -y dangerousForOf index.js > build.js",
+    "prepublish": "npm run build",
     "test": "eslint *.js"
   },
   "author": "Jarmo Isotalo",
@@ -19,20 +21,9 @@
   },
   "homepage": "https://github.com/jamox/nick-generator#readme",
   "devDependencies": {
-    "babel-cli": "^6.9.0",
-    "babel-core": "^6.9.0",
-    "babel-eslint": "^6.0.4",
-    "babel-polyfill": "^6.9.0",
-    "babel-preset-es2015": "^6.9.0",
+    "buble": "^0.10.2",
     "eslint-config-standard": "^5.3.1",
     "eslint-plugin-promise": "^1.3.1",
-    "eslint-plugin-standard": "^1.3.2",
-    "gulp": "^3.9.1",
-    "gulp-ava": "^0.12.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-cached": "^1.1.0",
-    "gulp-chmod": "^1.3.0",
-    "gulp-eslint": "^2.0.0",
-    "gulp-task-listing": "^1.0.1"
+    "eslint-plugin-standard": "^1.3.2"
   }
 }
