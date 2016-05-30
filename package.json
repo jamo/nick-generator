@@ -1,0 +1,38 @@
+{
+  "name": "nick-generator",
+  "version": "0.0.1",
+  "description": "Generates funny nicks",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "start": "node dist/lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jarmo Isotalo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamox/nick-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamox/nick-generator/issues"
+  },
+  "homepage": "https://github.com/jamox/nick-generator#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint-config-standard": "^5.3.1",
+    "eslint-plugin-promise": "^1.3.1",
+    "eslint-plugin-standard": "^1.3.2",
+    "gulp": "^3.9.1",
+    "gulp-ava": "^0.12.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cached": "^1.1.0",
+    "gulp-chmod": "^1.3.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-task-listing": "^1.0.1"
+  }
+}
