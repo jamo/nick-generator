@@ -1,10 +1,11 @@
 {
   "name": "nick-generator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Forget using boring nicknames and start using witty alternatives instead.",
   "files": [
     "build.js"
   ],
+  "main": "build.js",
   "scripts": {
     "build": "buble -y dangerousForOf index.js > build.js",
     "prepublish": "npm run build",
