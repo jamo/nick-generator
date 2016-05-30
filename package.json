@@ -1,7 +1,7 @@
 {
   "name": "nick-generator",
-  "version": "0.0.2",
-  "description": "Generates funny nicks",
+  "version": "0.0.3",
+  "description": "Forget using boring names and start using witty alternatives like `Proud Beaver` or `Suspicious Bat`",
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
