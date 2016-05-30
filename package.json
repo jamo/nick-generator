@@ -1,12 +1,12 @@
 {
   "name": "nick-generator",
   "version": "0.0.3",
-  "description": "Forget using boring names and start using witty alternatives like `Proud Beaver` or `Suspicious Bat`",
+  "description": "Forget using boring nicknames and start using witty alternatives instead.",
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
     "start": "node dist/lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint *.js"
   },
   "author": "Jarmo Isotalo",
   "license": "MIT",

@@ -4,6 +4,7 @@
   "rules": {
     "yoda": 0,
     "semi": [2, "never"],
-    "no-extra-semi": 2
+    "no-extra-semi": 2,
+    "space-before-function-paren": [0]
   }
 }
