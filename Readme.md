@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/nick-generator.svg)](https://badge.fury.io/js/nick-generator)
 
-Generates random (hopefully) funny nicks from a list of common adjectives concatenated with animals.
+This library generates random and hopefully funny nicknames by combining common adjectives with animals. Forget using boring names like `guest32` or `guest33` and start using witty alternatives like `Proud Beaver` or `Suspicious Bat`
 
 
 ## Usage
