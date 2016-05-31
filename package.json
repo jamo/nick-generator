@@ -1,6 +1,6 @@
 {
   "name": "nick-generator",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Forget using boring nicknames and start using witty alternatives instead.",
   "files": [
     "build.js",
