@@ -32,7 +32,7 @@
     "tonic-example": "^0.2.0"
   },
   "tonicExampleFilename": "tonic-example.js",
-    "dependencies": {
+  "dependencies": {
     "random-name": "^0.1.1"
   }
 }
