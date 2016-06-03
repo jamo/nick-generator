@@ -5,9 +5,11 @@ const bird = ['Abyssinian', 'Affenpinscher', 'Afghan Hound', 'African Bush Eleph
 
 module.exports = exports.default = function generateNick() {
 
-  randarray = [adjectives[Math.floor(Math.random() * adjectives.length)], bird[Math.floor(Math.random() * bird.length)],random.first(),random.middle(),random.last(),random.place()]
+var randarray = [adjectives[Math.floor(Math.random() * adjectives.length)], bird[Math.floor(Math.random() * bird.length)], random.first(), random.middle(), random.last(), random.place()]
 
 var word1 = randarray[Math.floor(Math.random() * randarray.length)]
 var word2 = randarray[Math.floor(Math.random() * randarray.length)]
-  return `${word1} ${word2}`
+
+ return `${word1} ${word2}`
+
 }
