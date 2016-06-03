@@ -1,6 +1,6 @@
 {
   "name": "nick-generator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Forget using boring nicknames and start using witty alternatives instead.",
   "files": [
     "build.js",
@@ -34,5 +34,8 @@
   "tonicExampleFilename": "tonic-example.js",
   "dependencies": {
     "random-name": "^0.1.1"
+  },
+  "engines": {
+    "node" : ">=5.0.0"
   }
 }
