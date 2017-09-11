@@ -1,6 +1,6 @@
 const allowedFields = new Set(['animals'])
 
-module.exports = exports.default = function generateNick() {
+module.exports = function generateNick() {
   function get(field) {
     let obj = this[field]
     if (obj === void 0) {
@@ -15,19 +15,7 @@ module.exports = exports.default = function generateNick() {
     throw new Error('Unknown field: ' + field)
   }
 
-  function words() {
-    const okFields = [...fields].filter(x => allowedFields.has(x))
-    return Array.from(okFields).map(field => {
-      return get(field)
-    }).filter(Boolean)
-  }
-
-  function randomName() {
-    const names = words()
-    return names[Math.floor(Math.random() * names.length)]
-  }
-
-  return `${get('adjectives')} ${randomName()}`
+  return `${get('adjectives')} ${get('animals')}`
 }
 
 const adjectives = [
@@ -83,6 +71,7 @@ const adjectives = [
   'Witty',
   'Wonderful',
   'Zealous']
+
 const animals = ['Abyssinian',
  'Affenpinscher',
  'African Bush Elephant',
