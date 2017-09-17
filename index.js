@@ -1,5 +1,5 @@
 const allowedFields = new Set(['animals'])
-const data = require('./data.json');
+const data = require('./data.json')
 
 module.exports = function generateNick() {
   function get(field) {
@@ -19,6 +19,6 @@ module.exports = function generateNick() {
   return `${get('adjectives')} ${get('animals')}`
 }
 
-const adjectives = data.adjectives;
+const adjectives = data.adjectives
 
-const animals = data.animals;
+const animals = data.animals
