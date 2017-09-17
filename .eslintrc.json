@@ -5,6 +5,10 @@
     "yoda": 0,
     "semi": [2, "never"],
     "no-extra-semi": 2,
-    "space-before-function-paren": [0]
+    "space-before-function-paren": [0],
+    "padded-blocks": [0],
+    "no-undef": [0],
+    "no-unused-vars": [0],
+    "no-eval": [0]
   }
 }
