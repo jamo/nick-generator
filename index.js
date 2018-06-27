@@ -1,11 +1,8 @@
-const allowedFields = new Set(['animals'])
+var dictionaries = {}
 
 module.exports = function generateNick() {
   function get(field) {
-    let obj = this[field]
-    if (obj === void 0) {
-      obj = eval(field)
-    }
+    var obj = dictionaries[field]
     if (typeof obj === 'function') {
       obj = obj()
     }
@@ -15,10 +12,10 @@ module.exports = function generateNick() {
     throw new Error('Unknown field: ' + field)
   }
 
-  return `${get('adjectives')} ${get('animals')}`
+  return get('adjectives') + ' ' + get('animals')
 }
 
-const adjectives = [
+dictionaries.adjectives = [
   'Adorable',
   'Amazing',
   'Brave',
@@ -72,7 +69,7 @@ const adjectives = [
   'Wonderful',
   'Zealous']
 
-const animals = ['Abyssinian',
+dictionaries.animals = ['Abyssinian',
  'Affenpinscher',
  'African Bush Elephant',
  'African Civet',
