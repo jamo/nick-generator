@@ -3,9 +3,6 @@ var dictionaries = {}
 module.exports = function generateNick() {
   function get(field) {
     var obj = dictionaries[field]
-    if (typeof obj === 'function') {
-      obj = obj()
-    }
     if (Array.isArray(obj)) {
       return obj[Math.floor(Math.random() * obj.length)]
     }
@@ -26,6 +23,7 @@ dictionaries.adjectives = [
   'Confident',
   'Delightful',
   'Eager',
+  'Evil',
   'Efficient',
   'Electronic',
   'Elegant',
